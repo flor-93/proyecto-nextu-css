@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tu Campamento</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="campamento, camping, aire libre, fogata, paseo natural, salida en familia, salida en pareja, salida con amigos,  naturaleza">
+        <meta name="description" content="Página web de sitio de campamento">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+
+    <body>
+        <header id="encabezado">
+            <h1>Tu Campamento</h1>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#section-1">Playa</a></li>
+                    <li><a href="#section-2">Parque</a></li> 
+                    <li><a href="#section-3">Río</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <main id="principal">
+            <div id="texto-principal">
+                <h1>Te llevamos a pasar tus mejores momentos...</h1>
+                <p>Escoge un lugar, la cantidad de tiempo y te llevamos</p>
+            </div>
+        </main>
+
+
+
+        <section id="section-1" class="actividades">
+            <div id="playa" class="texto-foto">   
+                    <h1>Playa</h1>
+                    <p>Ve a la playa por una semana, te llevamos en bote a ditintos lugares...</p>
+            </div>
+
+            <img src="imagenes/playa.jpg" class="img-1" alt="bote">
+            <img src="imagenes/playa-1.jpg " class="img-2"  alt="fogata-playa">
+                    
+        </section>
+
+        <section id="section-2" class="actividades">
+            <div id="parque" class="texto-foto">
+                    <h1>Parque</h1>
+                    <p>Paseos de un día al parque y disfruta de la naturaleza
+                    </p>
+            </div>
+
+            <img src="imagenes/parque.jpg" class="img-1" alt="puente">
+            <img src="imagenes/parque-1.webp " class="img-2" alt="jardín">
+
+        </section>
+
+        <section id="section-3" class="actividades">
+            <div id="rio" class="texto-foto"> 
+                    <h1>Río</h1>
+                    <p>Quédate en un campamento y disfruta del río</p>
+            </div>
+
+            <img src="imagenes/rio.jpg" class="img-1" alt="río">
+            <img src="imagenes/rio-1.jpg " class="img-2" alt="cascada">
+
+        </section>
+
+
+
+        <div id="pie-de-pagina">
+
+            <footer id="datos">                
+                <div id="bloque-de-texto-1">
+                    <p id="p1">Dirección:</p>
+
+                    <span id="p2"><p>Edif 5 Av 1</p> 
+                    <p>Provincia</p> 
+                    <p>Codigo Postal 123123.</p></span>
+                </div>
+
+                <div id="bloque-de-texto-2">
+                    <p id="p3">Teléfonos:</p>
+                    <p id="p4">123-12312412</p>
+                </div>
+            </footer>
+        
+            <aside id="contacto">
+            <form>
+                <fieldset>
+                    <p id="titulo-contacto">Contacto</p>
+                    <p>
+                        <label for="email">Email*</label> <br/>
+                        <input type="email" name="email" required="Campo obligatorio">
+                    </p>
+                    
+                    <p>
+                        <label for="descripcion">Descripción</label> <br/>
+                        <textarea name="descripcion" cols="30" rows="10" placeholder="Escriba aquí"></textarea>
+                    </p>
+
+                    <p>
+                        <input id="boton-enviar" type="submit" value="Enviar" name="enviar">
+                </fieldset>
+            </form>
+            </aside>
+        </div>
+    </body>
+</html>

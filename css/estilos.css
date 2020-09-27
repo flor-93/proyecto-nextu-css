@@ -1,0 +1,385 @@
+@font-face {
+    font-family: "Sen-Regular";
+    src: url("../fuentes/Sen-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Sen-Bold";
+    src: url("../fuentes/Sen-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Amatic-Regular";
+    src: url("../fuentes/AmaticSC-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Amatic-Bold";
+    src: url("../fuentes/AmaticSC-Bold.ttf");
+}
+
+body {
+    margin: 0;
+}
+
+#encabezado {
+    background: rgb(180, 29, 29);
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+#encabezado h1 {
+    font-family: "Amatic-Bold";
+    font-size: 36pt;
+    text-align: center;
+    margin: 0;
+    padding-block-start: 3px;
+}
+
+#menu ul {
+    margin-block-start: 5px;
+    margin-block-end: 0;
+    padding-block-end: 8px;
+    padding-inline-start: 0;
+}
+
+#menu li {
+    display: inline;
+    padding-right: 8px;
+    list-style: none;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    font-family: "Sen-Bold";
+}
+
+#menu a:hover {
+    color: rgb(252, 151, 0);
+}
+
+#principal {
+    width: 100%;
+    height: 100%;
+    background-image: url("../imagenes/principal.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 25px;
+    padding-bottom: 150px;
+    margin: 0;
+}
+
+#texto-principal {
+    background: rgba(255, 227, 135, 0.5);
+    border-radius: 1em;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 1px;
+}
+
+#texto-principal h1 {
+    font-family: "Amatic-Bold";
+    font-size: 200%;
+    margin-block-start: 1px;
+    margin-block-end: 3px;
+}
+
+#texto-principal p {
+    font-family: "Sen-Bold";
+    font-size: 90%;
+    margin-block-start: 3px;
+    margin-block-end: 5px;
+}
+
+.actividades {
+    margin-bottom: 0;
+}
+
+.actividades h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-family: "Amatic-Bold";
+    text-align: center;
+    font-size: 70px;
+    padding-top: 10px;
+}
+
+.actividades p {
+    font-family: "Sen-Bold";
+    font-size: 15px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.actividades img {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 20px;    
+}
+
+.mascara .img-1, .mascara .img-2 {
+    position: absolute;
+    margin: auto;
+}
+
+.actividades .img-2 {
+    display: none;
+}
+
+#section-1 {
+    width: 100%;
+    background-color: rgb(255, 254, 221);
+    padding-bottom: 30px;
+}
+
+#section-2 {
+    width: 100%;
+    background-color: rgb(212, 253, 189);
+    padding-bottom: 30px;
+}
+
+#section-3 {
+    background-color: rgb(253, 223, 189);
+    padding-bottom: 30px;
+}
+
+#datos {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+#bloque-de-texto-1 {
+    margin-bottom: 30px;
+}
+
+#p2 p {
+    margin-block-start: 1px;
+    margin-block-end: 1px;
+}
+
+#p1, #p3 {
+    font-family: "Amatic-Bold";
+    font-size: 19pt;
+    margin-bottom: 0em;
+    margin-top: 0;
+}
+
+#p2, #p4 {
+    font-family: "Sen-Regular";
+    font-size: 10pt;
+    font-weight: 100;
+    margin-top: 0em;
+}
+
+#p2 {
+    font-style: italic;
+}
+
+#contacto {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#contacto form fieldset {
+    border: solid 1px rgb(255, 195, 105);
+    background: rgb(255, 250, 230);
+    border-radius: 1em;
+    margin-bottom: 50px;
+}
+
+#titulo-contacto {
+    font-size: 28px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: "Amatic-Bold";
+}
+
+#contacto form fieldset label {
+    font-family: "Amatic-Regular";
+    font-size: 20px;
+}
+
+input, textarea {
+    border: solid 1px rgb(255, 195, 105);
+    width: 95%;
+} 
+
+#boton-enviar {
+    font-family: "Amatic-Regular";
+    font-size: 18px;
+    background: rgb(255, 195, 105);
+    border-radius: 10px;
+    width: 50px;
+    height: 33px;
+}
+
+/*celulares: hasta 420px width (max)
+tablet: desde 421px (min) hasta 966px (max)
+notebook y de escritorio: desde 967px (min), hasta 1280*/
+
+@media (min-width:421px) and (max-width:966px) {
+    #encabezado, #menu {
+        justify-content: center;
+    }
+
+    #encabezado {
+        display: flex;
+        align-items: baseline;
+    }
+
+    #encabezado h1 {
+        font-size: xx-large;
+    }
+
+    #menu {
+        padding-left: 20px;
+    }
+
+    #texto-principal {
+        width: 400px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #texto-principal p {
+        padding-top: 5px;
+    }
+
+    .actividades, #pie-de-pagina {
+        flex-direction: row;
+    }
+
+    .actividades {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .actividades .texto-foto {
+        padding-top: 20px;
+        margin-right: 20px;
+        margin-left: 20px
+    }
+
+    .actividades .texto-foto h1 {
+        font-size: 48pt;
+    }
+
+    .actividades .texto-foto p {
+        font-size: 9pt;
+    }
+
+    .actividades .img-1 {
+        width: 250px;
+        margin-right: 30px;
+    }
+
+    #datos {
+        width: 50%;
+    }
+
+    #contacto {
+        width: 400px;
+        margin-right: 30px;
+    }
+
+    #datos, #contacto form fieldset {
+        margin-top: 20px;
+    }
+
+    #pie-de-pagina {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width:967px) {
+    #encabezado {
+        display: flex;
+        align-items: baseline;
+    }
+
+    #encabezado h1 {
+        font-size: xx-large;
+        margin-left: 15px;
+        margin-right: 30px;
+    }
+
+    #texto-principal {
+        width: 400px;
+        margin-left: 150px;
+        padding-bottom: 20px;
+    }
+
+    #texto-principal p {
+        padding-top: 5px;
+    }
+
+    .actividades {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .actividades .img-2 {
+        display: flex;
+        order: 1;
+    }
+
+    .texto-foto {
+        order: 2;
+        width: 300px;
+    }
+
+    .texto-foto p {
+        font-size: 10pt;
+        margin-block-start: 5px;
+        margin-block-end: 5px;
+    }
+
+    .actividades .img-1 {
+        order: 3;
+    }
+
+    .actividades img {
+        width: 200px;
+        transition: transform 0.5s;
+    }
+
+    .actividades img:hover {
+        transform: scale(1.2);
+        filter: saturate(150%);
+    }
+
+    #datos {
+        width: 30%;
+        margin-left: 50px;
+    }
+
+    #contacto {
+        width: 560px;
+        margin-right: 30px;
+    }
+
+    #datos, #contacto form fieldset {
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    #pie-de-pagina {
+        display: flex;
+        justify-content: center;
+    }
+}
+
